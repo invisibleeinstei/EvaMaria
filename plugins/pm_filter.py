@@ -135,7 +135,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('Cant find that file 🙁🚶🏻')
+            k = await query.message.edit('Can not find that file.🙁🚶🏻')
             await asyncio.sleep(10)
             await k.delete()
 
