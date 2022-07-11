@@ -1,12 +1,11 @@
 FROM python:3.8
 
-RUN apt update && apt upgrade -y
-RUN apt install git -y
-COPY requirements.txt /requirements.txt
+WORKDIR /app
 
-RUN cd /
+COPY requirements.txt /app/
+
 RUN pip3 install -r requirements.txt
-RUN mkdir /EvaMaria
-WORKDIR /EvaMaria
-COPY start.sh /start.sh
-CMD ["/bin/bash", "/start.sh"]
+
+COPY . /app
+
+CMD python3 bot.py
