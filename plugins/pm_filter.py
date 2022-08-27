@@ -708,7 +708,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>ඔයා ඉල්ලුවේ =<code>{search}</code></b>
+        cap = f"<b>ඔයා ඉල්ලුවේ <code>{search}</code></b>
         
         <a href="https://t.me/+nYWmNNoj3QFiYWU1">AL KUPPIYA GROUP 🐣</a>
         <a href="https://t.me/+bPFNYjdECxRjYTQ1">AL KUPPIYA OFFICIAL CHANNEL 👾</a>"
