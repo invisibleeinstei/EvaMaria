@@ -708,7 +708,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>ඔයා ඉල්ලුවේ =<code>{search}</code></b>\n\n<a href="https://t.me/+nYWmNNoj3QFiYWU1">ᴀʟᴇᴠᴇʟ ᴋᴜᴘᴘɪʏᴀ ɢʀᴏᴜᴘ 🐣 </a>\n<a href="https://t.me/+bPFNYjdECxRjYTQ1">ᴀʟᴇᴠᴇʟ ᴋᴜᴘᴘɪʏᴀ ᴄʜᴀɴɴᴇʟ 👾</a>"
+        cap = f"<b>ඔයා ඉල්ලුවේ =<code>{search}</code></b>\n\n<a href="https://t.me/+nYWmNNoj3QFiYWU1">AL KUPPIYA GROUP 🐣</a>\n<a href="https://t.me/+bPFNYjdECxRjYTQ1">AL KUPPIYA CHANNEL 👾</a>"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
